@@ -1,7 +1,7 @@
 {
-  "name": "ssm-lambda-env",
+  "name": "ecologist",
   "version": "0.0.1",
-  "description": "Sets up environment for AWS Lambda using SSM, reinitalizes when vars change",
+  "description": "Monitors the environment, sets up environment for AWS Lambda using SSM, reinitialise function when the environment changes",
   "main": "lib/index.js",
   "author": "Paul Esson",
   "license": "MIT",
@@ -12,9 +12,9 @@
   },
   "private": false,
   "devDependencies": {
-    "@blueflag/proto-blueflag-test": "git+ssh://git@github.com/blueflag/proto-blueflag-test.git#^0.11.0",
-    "ava": "^0.25.0",
     "babel-preset-blueflag": "^0.6.0",
+    "@blueflag/proto-blueflag-test": "git+ssh://git@github.com/blueflag/proto-blueflag-test.git#0.11.0",
+    "ava": "^0.25.0",
     "nyc": "^11.4.1",
     "proxyquire": "^1.8.0"
   },
