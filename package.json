@@ -1,0 +1,25 @@
+{
+  "name": "ecologist",
+  "version": "0.0.1",
+  "description": "Monitors the environment, sets up environment for AWS Lambda using SSM, reinitialise function when the environment changes",
+  "main": "lib/index.js",
+  "author": "Paul Esson",
+  "license": "MIT",
+  "scripts": {
+    "test": "blueflag-test test",
+    "prepublish": "yarn build",
+    "build": "rm -rf lib && babel src --out-dir lib --copy-files"
+  },
+  "private": false,
+  "devDependencies": {
+    "babel-preset-blueflag": "^0.6.0",
+    "@blueflag/proto-blueflag-test": "git+ssh://git@github.com/blueflag/proto-blueflag-test.git#v0.11.0",
+    "ava": "^0.25.0",
+    "nyc": "^11.4.1",
+    "proxyquire": "^1.8.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.188.0",
+    "rxjs": "^5.5.6"
+  }
+}
